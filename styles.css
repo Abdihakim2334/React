@@ -1,0 +1,106 @@
+/* CSS Variables */
+:root {
+    --primary-color: #0931a9;
+    --secondary-color: #0c0202;
+    --text-color: #f7f7f7;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+
+/* Work Section */
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-gallery img {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.3s;
+    flex: 1 1 calc(30% - 20px);
+}
+
+.work-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.work-gallery img:first-child {
+    flex-basis: 100%; /* Make the first image larger */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .work-gallery img {
+        flex: 1 1 calc(45% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .work-gallery img {
+        flex: 1 1 100%;
+    }
+
+    .profile-img {
+        width: 100px;
+    }
+}
