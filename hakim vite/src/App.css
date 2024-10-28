@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  animation: logo-spin 1s linear infinite; /* Add spinning animation */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@keyframes spinText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-link {
+  display: inline-block; /* Needed for the transform to work correctly */
+  font-size: 1.2em; /* Adjust as needed */
+  color: #333; /* Adjust to your color */
+  transition: color 0.3s; /* Smooth color change on hover */
+}
+
+.nav-link:hover {
+  color: #646cff; /* Change to your hover color */
+  animation: spinText 1s linear; /* Add the spinning animation on hover */
+}
+
+
+
